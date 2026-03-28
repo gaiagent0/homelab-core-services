@@ -1,0 +1,5 @@
+{ auto_https off }
+:443 {
+    tls /etc/caddy/vaultwarden.crt /etc/caddy/vaultwarden.key
+    reverse_proxy localhost:80
+}

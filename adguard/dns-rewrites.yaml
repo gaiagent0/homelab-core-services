@@ -1,0 +1,6 @@
+version: 1
+rewrites:
+  - domain: vaultwarden.lan
+    answer: 10.10.40.107
+  - domain: grafana.lan
+    answer: 10.10.40.208

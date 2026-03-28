@@ -1,0 +1,6 @@
+configs/env
+*.key
+*.crt
+*.pem
+.vscode/
+.DS_Store
