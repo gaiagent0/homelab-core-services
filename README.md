@@ -86,7 +86,8 @@ bash vaultwarden/install.sh
 homelab-core-services/
 ├── README.md
 ├── docs/
-│   └── adguard.md                — DNS rewrites, upstream config, MikroTik integration
+│   ├── adguard.md                — DNS rewrites, upstream config, MikroTik integration
+│   └── high-availability.md      — HA node-affinity failover (pve-01 → pve-02), ZFS replication
 ├── configs/
 │   └── env.example               — All configurable variables
 ├── scripts/
@@ -219,4 +220,13 @@ pct set 105 --onboot 1 --startup order=40,up=20
 
 ---
 
-*Tested on: Proxmox VE 8.3 · AdGuard Home 0.107.57 · NPM 2.11.3 · VaultWarden 1.32.7 · Tailscale 1.80.x*
+*Tested on: Proxmox VE 9.2 · AdGuard Home 0.107.57 · NPM 2.11.3 · VaultWarden 1.32.7 · Tailscale 1.80.x*
+
+---
+
+## High Availability
+
+CT101, CT105, CT106, and CT107 are protected by Proxmox HA with automatic
+failover from pve-01 to pve-02, backed by 15-minute ZFS replication.
+See [docs/high-availability.md](docs/high-availability.md) for the full
+rule configuration, replication schedule, and known limitations.
