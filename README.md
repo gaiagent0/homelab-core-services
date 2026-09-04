@@ -4,7 +4,7 @@
 > One LXC per service — fault isolation, minimal blast radius, independent lifecycle management.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![PVE](https://img.shields.io/badge/Proxmox_VE-8.x-orange)](https://www.proxmox.com)
+[![PVE](https://img.shields.io/badge/Proxmox_VE-9.x-orange)](https://www.proxmox.com)
 [![AdGuard](https://img.shields.io/badge/AdGuard_Home-0.107.x-green)](https://github.com/AdguardTeam/AdGuardHome)
 
 ---
